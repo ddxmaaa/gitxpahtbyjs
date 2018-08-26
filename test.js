@@ -51,6 +51,7 @@ function sleep(n) { //n表示的毫秒数
 				alert($shadow.domXpath(this));
 			}
 			c += 1 
+			console.log(c)
 			if(this.parentNode==document)
 			{
 				c=0
