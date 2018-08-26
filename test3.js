@@ -36,7 +36,7 @@ $(document).ready(function(){
 		if (bbb==0){
 			$(this).css("border-style","solid");
 		}
-		b += 1 
+		bbb += 1 
 		console.log(bbb)
 		if(this.parentNode==document)
 		{
