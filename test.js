@@ -30,17 +30,17 @@ function sleep(n) { //n表示的毫秒数
 	
 $(document).ready(function(){
 	c=0
-	b=0
+	bbb=0
 	$("*").on('mouseover',function () {
 		
-		if (b==0){
+		if (bbb==0){
 			$(this).css("border-style","solid");
 		}
 		b += 1 
-		console.log(b)
+		console.log(bbb)
 		if(this.parentNode==document)
 		{
-			b=0
+			bbb=0
 		}
 
 	})
