@@ -28,37 +28,36 @@ function sleep(n) { //n表示的毫秒数
 		while (true) if (new Date().getTime() - start > n) break;
 	}  
 	
-	$(document).ready(function(){
-		c=0
-		b=0
-		$("*").on('mouseover',function () {
-			
-			if (b==0){
-				$(this).css("border-style","solid");
-			}
-			b += 1 
-			console.log(b)
-			if(this.parentNode==document)
-			{
-				b=0
-			}
+$(document).ready(function(){
+	c=0
+	b=0
+	$("*").on('mouseover',function () {
+		
+		if (b==0){
+			$(this).css("border-style","solid");
+		}
+		b += 1 
+		console.log(b)
+		if(this.parentNode==document)
+		{
+			b=0
+		}
 
-		})
-		$("*").on('mouseout',function () {
-			$(this).css("border-style","");
+	})
+	$("*").on('mouseout',function () {
+		$(this).css("border-style","");
+	})
+	$("*").on('click',function () {
+		//alert($shadow.domXpath(this));
+		if (c==0){
+			alert($shadow.domXpath(this));
+		}
+		c += 1 
+		console.log(c)
+		if(this.parentNode==document)
+		{
+			c=0
+		}
 
-		})
-		$("*").on('click',function () {
-			//alert($shadow.domXpath(this));
-			if (c==0){
-				alert($shadow.domXpath(this));
-			}
-			c += 1 
-			console.log(c)
-			if(this.parentNode==document)
-			{
-				c=0
-			}
-
-		})
-	});
+	})
+});
