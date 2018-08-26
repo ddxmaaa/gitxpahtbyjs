@@ -30,27 +30,22 @@ function sleep(n) { //n表示的毫秒数
 	
 	$(document).ready(function(){
 		c=0
-		b
+		b=0
 		$("*").on('mouseover',function () {
 			
 			if (b==0){
 				$(this).css("border-style","solid");
 			}
 			b += 1 
-			console.log(c)
+			console.log(b)
 			if(this.parentNode==document)
 			{
 				b=0
 			}
- d
+
 		})
 		$("*").on('mouseout',function () {
 			$(this).css("border-style","");
-			$("*").bind("mouseover",function () {
-					$(this).css("border-style","solid");
-					$("*").unbind("mouseover")
-					$($(this).parentNode).css('bodrer-style',"");
-					})
 
 		})
 		$("*").on('click',function () {
